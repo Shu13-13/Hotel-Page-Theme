@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunni Blue</title>
+    <meta name="description" content="開放的だけど穏やかな情緒溢れるリゾート">
+
+  <!-- CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/ress@3.0.0/dist/ress.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<script>
+	$(function(){
+		$("#panel-btn").click(function() {
+			$("#panel").slideToggle(200);
+			$("#panel-btn-icon").toggleClass("close");
+			$("#header").toggleClass("close");
+			return false;
+		});
+	});
+</script>
+<body>
+  <div id="contact" class="big-bg">
+    <header id="page-header">
+      <div class="wrapper">
+        <h1><a href="index.html"><img class="logo" src="images/logo.png" alt="SUNII BLUE"></a></h1>
+        <a href="#" id="panel-btn"><span id="panel-btn-icon"></span></a>
+      </div>
+    </header>
+    <div id="panel" class="nav-content"><!--チェックが入ったら見せるメニュー-->
+      <ul class="link">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="rooms.html">お部屋</a></li>
+        <li><a href="plan.html">宿泊プラン</a></li>
+        <li><a href="facility.html">施設</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+
+    <div class="contact-container wrapper">
+      <div class="doc-area">
+        <div class="title-wrapper">
+          <h2 class="page-title">Contact</h2>
+        </div>
+        <p>SUNII BLUEのお問い合わせ・ご質問は下記フォームでお送りください。
+          なお、登録された個人情報はお問い合わせの対応以外には使用しません。</p>
+      </div>
+      <form action="#">
+        <div>
+          <label for="name">お名前</label>
+          <input type="text" name="your-family-name" id="name" placeholder="姓">
+          <input type="text" name="your-first-name" id="name" placeholder="名">
+        </div>
+        <div>
+          <label for="phone-number">電話番号</label>
+          <input type="tel" name="phone-number" id="phone-number" placeholder="000-0000-0000">
+        </div>
+        <div>
+          <label for="email">メールアドレス</label>
+          <input type="email" name="your-email" id="email" placeholder="0000000@mail.com">
+        </div>
+        <div>
+          <label for="message">お問合せ内容</label>
+          <textarea name="your-message" id="message" placeholder="入力してください"></textarea>
+        </div>
+        <input type="submit" class="button" value="上記内容を確認">
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <p><small>&copy; 2021 MAEKAWA</small></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,694 @@
+@charset "utf-8";
+
+/* 共通部分 */
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "遊ゴシック Medium", "YuGothic", "遊ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+.wrapper{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.title-wrapper{
+    display: inline-block;
+    margin-top: 14%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+/* HEADER */
+#page-header .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 180px;
+    margin-top: 14px;
+    border: #b787b6 solid 1px;
+}
+
+/* ナビゲーションドロワー */
+.nav-content{
+	padding:10px;
+	width: 100vw;
+    height: 100vh;
+    text-align: center;
+	background: rgba(255, 255, 255);
+	position:fixed;
+	transition:.3s ease-in-out;
+    z-index: 98;
+}
+.nav-content ul{
+    max-width: 60vw;
+    margin: 5vh auto 0;
+    padding: 6vh 0;
+    border-top: 2px solid #432;
+    border-bottom: 2px solid #432;
+}
+.nav-content li{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.nav-content a{
+    color: #432;
+}
+.nav-content a:hover{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    color: #b137af;
+    background: rgba(255, 255, 255, .5);
+}
+
+/* 見出し */
+.page-title{
+    font-size: 3.5rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+}
+/* ホーム背景画像 */
+.big-bg{
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+/* HOME */
+#home{
+    background-image: url(../images/main-bg.jpg);
+    height: 100vh;
+}
+.home-content{
+    text-align: center;
+    margin-top: 10%;
+}
+.home-content p{
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+
+/* ROOM-BOX */
+.room-box{
+    text-align: center;
+    min-height: 50vh;
+}
+.room-box1{
+    background: url(../images/room-box-bg1.jpg) center center;
+    background-size: cover;
+}
+.room-box2{
+    background: url(../images/room-box-bg2.jpg) center center;
+    background-size: cover;
+}
+.room-box3{
+    background: url(../images/room-box-bg3.jpg) center center;
+    background-size: cover;
+}
+.room-box4{
+    background: url(../images/room-box-bg4.jpg) center center;
+    background-size: cover;
+}
+.page-cat{
+    font-size: 1.5rem;
+    margin-top: 15vh;
+    display: inline-block;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.room-box:hover{
+    background-color: rgba(221, 200, 177, .4);
+    background-blend-mode: soft-light;
+}
+.room-box h2{
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+.room-box a{
+   color: #fff;
+}
+
+/* PLAN-box */
+.plan-box{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 17vh auto 70px;
+}
+.plan-box h2{
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+.plan-box .wrapper{
+    position: relative;
+}
+.plan-box .doc-area{
+    border-radius: 100px;
+    background: #b787b6;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    font-size: 1.225rem;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 0;
+}
+.plan-box .page-cat{
+    padding-top: 50px;
+    padding-left: 16px;
+    margin: 0 auto;
+}
+.plan-box .box-title{
+    padding-left: 16px;
+}
+.plan-box .box-content{
+    padding-left: 16px;
+}
+.plan-box .item-wrapper{
+    max-width: 70%;
+    height: 480px;
+    margin-left: 270px;
+    display: flex;
+    overflow-x: scroll;  /* 横スクロールの指定 */
+    white-space: nowrap;  /* 横スクロールの指定 */
+    overflow-scrolling: touch;  /* スクロールを滑らかにする */
+    -webkit-overflow-scrolling: touch;
+}
+.plan-box .item{
+    width: 400px;
+    height: 460px;
+    margin-right: 20px;
+    background-color: #fe9490;
+    color: #fff;
+}
+.plan-box .item img{
+    width: 100%;
+    max-height: 40%;
+    object-fit: cover;
+}
+.plan-box .description{
+    padding: auto 5px;
+    margin: 0 auto;
+}
+.plan-box .item h3{
+    white-space: normal;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.plan-box .item p{
+    display: block;
+}
+
+/* Facility-box */
+.facility-box{
+    background: url(../images/facility-box-bg.jpg) center center;
+    background-size: cover;
+    color: rgba(255, 255, 255, .8);
+    cursor: pointer;
+}
+.facility-box:hover{
+    color: #fff;
+    background-color: rgba(221, 200, 177, .4);
+    background-blend-mode: soft-light;
+}
+.facility-box h2{
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-top: 20%;
+}
+
+/* NEWS-box */
+.news-box{
+    margin-bottom: 70px;
+}
+.news-box h2{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+.news-box .item-container{
+    display: flex;
+    justify-content: space-between;
+}
+.news-box .item{
+    width: 30vw;
+    cursor: pointer;
+}
+.news-box img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.news-box .page-date{
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* フッター */
+footer{
+    background: #b787b6;
+    text-align: center;
+    padding: 26px 0;
+}
+
+footer p{
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+
+/* ROOMページ */
+#room{
+    background-image: url(../images/rooms-bg.jpg);
+    background-color: rgb(221, 161, 122);
+    background-blend-mode:soft-light;
+    background-position: center center;
+    height: 90vh;
+    min-height: 400px;
+    margin-bottom: 55px;
+}
+.room-container{
+    padding-top: 15vh;
+    padding-bottom: 70px;
+}
+.room{
+    margin-bottom: 60px;
+}
+.room-container h2{
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.room-container .item-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0;
+    color: #fff;
+}
+.room-container .item{
+    text-align: center;
+    background-size: cover;
+    padding: auto;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+/* ROOM1 */
+.room1 .item1{
+    background-image: url(../images/room1-img1.jpg);
+}
+.room1 .item2{
+    background-image: url(../images/room1-img2.jpg);
+}
+.room1 .item3{
+    background-image: url(../images/room1-img3.jpg);
+}
+/* ROOM2 */
+.room2 .item1{
+    background-image: url(../images/room2-img1.jpg);
+}
+.room2 .item2{
+    background-image: url(../images/room2-img2.jpg);
+}
+.room2 .item3{
+    background-image: url(../images/room2-img3.jpg);
+}
+/* ROOM3 */
+.room3 .item1{
+    background-image: url(../images/room3-img1.jpg);
+}
+.room3 .item2{
+    background-image: url(../images/room3-img2.jpg);
+}
+.room3 .item3{
+    background-image: url(../images/room3-img3.jpg);
+}
+/* ROOM4 */
+.room4 .item1{
+    background-image: url(../images/room4-img1.jpg);
+}
+.room4 .item2{
+    background-image: url(../images/room4-img2.jpg);
+}
+.room4 .item3{
+    background-image: url(../images/room4-img3.jpg);
+}
+.room-container h3{
+    margin: 23% auto;
+}
+
+/* 宿泊プラン */
+#plan{
+    background-image: url(../images/plan-bg.jpg);
+    background-color: rgb(221, 161, 122);
+    background-blend-mode:soft-light;
+    background-position: center center;
+    height: 90vh;
+    min-height: 400px;
+}
+.plan-container{
+    background-color: rgba(206, 190, 137, 0.8);
+    padding-top: 25vh;
+    padding-bottom: 90px;
+}
+.plan-container .plan{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.plan-container .plan:nth-child(2n){
+    flex-direction: row-reverse;
+}
+.plan-container img{
+    height: 400px;
+    max-height: 100%;
+    width: 60vw;
+    object-fit: cover;
+}
+.plan-container .description{
+    width: 40vw;
+    margin: auto;
+    padding: 0 4%;
+}
+
+/* 施設 */
+#facility{
+    background-image: url(../images/facility-bg.jpg);
+    background-color: rgb(221, 161, 122);
+    background-blend-mode:soft-light;
+    background-position: center center;
+    height: 90vh;
+    min-height: 400px;
+}
+.facility-container{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding-top: 12vh;
+    padding-bottom: 90px;
+}
+.facility-container .facility{
+    cursor: pointer;
+    padding: 0;
+}
+.facility-container h2{
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+.facility-container img{
+    max-height: 50%;
+    object-fit: contain;
+}
+
+/* お問合わせ */
+#contact{
+    background-image: url(../images/contact-bg.jpg);
+    background-color: rgb(221, 161, 122);
+    background-blend-mode:soft-light;
+    background-position: center bottom;
+    min-height: 180vh;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+}
+.doc-area{
+    width: 40%;
+    margin: 0 auto;
+    padding: 4% 0;
+}
+
+/* フォーム */
+form{
+    width: 60%;
+    margin: 0 auto;
+    padding: 11% 8%;
+}
+form div{
+    margin-bottom: 22px;
+}
+
+label{
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+    background: rgba(255, 255, 255, .5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    max-width: 240px;
+}
+textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 10rem;
+}
+input[type="submit"]{
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+/* 確認ボタン */
+.button{
+    background: #a14ca0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+.button:hover{
+    background: #8a2b88;
+}
+
+@media (max-width :600px){
+    .page-title{
+        font-size: 2.5rem;
+    }
+    /* HEADER */
+    .logo{
+        width: 170px;
+        margin-top: 14px;
+    }
+    /* ROOM-box */
+    .room-box h2{
+        font-size: 2rem;
+    }
+    /* PLAN-box */
+    .plan-box{
+        margin: 7vh auto 40px;
+    }
+    .plan-box h2{
+        font-size: 2rem;
+    }
+    .plan-box .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .plan-box .doc-area{
+        width: 330px;
+        height: 330px;
+        top: 30px;
+        left: 50px;
+    }
+    .plan-box .page-cat{
+        padding-top: 40px;
+        padding-left: 0;
+    }
+    .plan-box .box-title{
+        padding-left: 0;
+    }
+    .plan-box .box-content{
+        font-size: 1.125rem;
+        padding-left: 0;
+    }
+    .plan-box .item-wrapper{
+        max-width: 100%;
+        margin-top: 400px;
+        margin-left: 0;
+    }
+    .plan-box .item{
+        width: 280px;
+        height: 420px;
+    }
+    /* Facility-box */
+    .facility-box{
+        color: rgba(255, 255, 255);
+        height: 60vh;
+    }
+    .facility-box h2{
+        font-size: 2rem;
+        margin-top: 60%;
+    }
+    /* NEWS-box */
+    .news-box h2{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+    .news-box .item-container{
+        flex-direction: column;
+    }
+    .news-box .item{
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+    .news-box img{
+        max-width: 90%;
+    }
+
+    /* ROOMページ */
+    .room-container{
+        padding-top: 5vh;
+        padding-bottom: 40px;
+    }
+    .room-container h2{
+        font-size: 2rem;
+    }
+
+    /* 宿泊プラン */
+    .plan-container{
+        padding-top: 15vh;
+        padding-bottom: 40px;
+    }
+    .plan-container .plan{
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+    .plan-container .plan:nth-child(2n){
+        flex-direction: column;
+    }
+    .plan-container img{
+        height: 310px;
+        width: 100%;
+    }
+    .plan-container .description{
+        width: 100%;
+        padding: 15px 5% 0;
+    }
+
+    /* お問合わせ */
+    .contact-container{
+        flex-direction: column;
+    }
+    .doc-area{
+        width: 100%;
+        padding: 0;
+    }
+    /* フォーム */
+    form{
+        width: 100%;
+        margin: 8vh auto;
+        padding: 0;
+    }
+}
+
+/* 共通部分 */
+#page-header{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+}
+h3{
+    font-weight: normal;
+    color: #fff;
+}
+
+/* ボタンの見た目 */
+#panel-btn{
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: #b787b6 solid 1px;
+    margin: 20px 0 10px;
+    background-color: #fff;
+}
+
+#panel-btn:hover{
+    background-color: #fafafa;
+}
+#panel-btn-icon{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 2px;
+    margin: -1px 0 0 -7px;
+    background: #b787b6;
+    transition: .2s;
+}
+#panel-btn-icon::before, #panel-btn-icon::after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 14px;
+    height: 2px;
+    background: #b787b6;
+    transition: .3s;
+}
+#panel-btn-icon::before{
+    margin-top: -6px;
+}
+#panel-btn-icon::after{
+    margin-top: 4px;
+}
+
+/* パネル中身 */
+#panel{
+    display: none;
+    margin: 0;
+    padding: 120px 0;
+    text-align: center;
+}
+
+/* 開いた場合 */
+#panel-btn-icon.close{
+    background-color: transparent;
+}
+#panel-btn-icon.close::before, #panel-btn-icon.close::after{
+    margin-top: 0;
+}
+#panel-btn-icon.close::before{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+#panel-btn-icon.close::after{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
